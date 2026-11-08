@@ -42,6 +42,7 @@ approximately correct. Reconnecting without reading retained the same API ID
 and exactly one matching session.
 An older retained session also uploaded during sleep after its recorded end
 time had passed, matching its original frozen request without rewriting history.
+The final SD check confirmed valid receipts for both sessions and an empty queue.
 
 The Books app display, broader offline/restart recovery, stack/heap measurements
 and battery impact remain unverified. No synthetic sessions were sent to Readwise.
