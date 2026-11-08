@@ -24,8 +24,19 @@ The production HTTP retry-control test passes under AddressSanitizer and
 UndefinedBehaviorSanitizer. A scan of changed source and installation artifacts
 found no known private device/account values; this is not a guarantee against
 all unknown secrets.
-Hardware behavior, timing, stack/heap measurements and battery impact are not
-yet verified for this feature. No synthetic sessions were sent to Readwise.
+Installation was verified on X4 Pro. A retained first session was rejected by
+Readwise for a future timestamp caused by the saved loan-clock floor.
+Companion highlights.6 changes new session timestamps to fresh RTC UTC; it
+leaves the adapter, loan clock and existing records unchanged. Clock-fix host
+checks, four review axes and their targeted follow-ups, and the final .6 X4 Pro
+build pass. The clock test covers a failed RTC boot probe, unreadable/unset RTC,
+time zones, and a future loan-clock floor. The .6 build has no compiler
+warnings/errors: static RAM 111,804 / 327,680 bytes and flash
+5,483,250 / 6,553,600 bytes. Its application image is 5,488,512 bytes, SHA-256
+`9c3e818c975207df1f3d97e047a39d8dc9660ee1431552f3e4bc6fc09ddc0d0d`.
+End-to-end Books delivery, timing,
+stack/heap measurements and battery impact remain unverified. No synthetic
+sessions were sent to Readwise.
 
 ## Device test
 
