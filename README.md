@@ -4,6 +4,12 @@
 
 # Almanac: Reading Stats
 
+> **Readwise Books feature branch:** This fork adds optional direct Wi-Fi
+> reading-session sync to Readwise Books while keeping Almanac working.
+> It requires the companion CrossPoint firmware; see [setup and behavior](READWISE.md)
+> and [verification status](VERIFY.md). Original Almanac attribution and license
+> are preserved below.
+
 #### Reading time, streaks and progress on your reader and the web. Just a plugin for the official CrossPoint firmware: no other firmware, no account. _(beta)_
 
 **Free · No sign-up · Anonymous** · [www.almanac.im](https://almanac.im)
@@ -14,7 +20,13 @@
 | :---: | :---: | :---: |
 | <img src="docs/reader.png" width="250" alt="The plugin on the reader: today, all time and the books in progress"> | <img src="docs/charts.png" width="250" alt="Reading time by day and by hour on www.almanac.im"> | <img src="docs/books.png" width="250" alt="Books with their progress on www.almanac.im"> |
 
-## 🔒 Privacy first
+## Original Almanac service
+
+The privacy promises and Plugin Hub instructions below apply only to the original
+Almanac service. The optional Readwise Books mirror shares reading metadata with
+Readwise and uses your Readwise account. See [Books privacy and setup](READWISE.md).
+
+## 🔒 Privacy first (Almanac only)
 
 - 🙈 **Anonymous** — no sign-up: no name, email or password.
 - 📖 **Only the basics** — the book's file name, reading time and progress.
@@ -23,7 +35,7 @@
 
 [Privacy policy and terms](https://almanac.im/privacy)
 
-## 📦 Install
+## 📦 Install original Almanac (without Books sync)
 
 You need a reader with [CrossPoint](https://crosspointreader.com) 2.0 or newer (tested on the Xteink X3), Wi-Fi and a phone.
 

@@ -3,3 +3,21 @@ node_modules/
 !.yarn/patches
 .DS_Store
 almanac.crosspoint-plugin/config.json
+
+# Personal account/device data must never enter the public fork.
+.crosspoint/
+token.json
+config.json
+events.jsonl
+*.epub
+*.log
+*.meta.json
+*.before-readwise
+setup-report.json
+__pycache__/
+.env
+.env.*
+!.env.example
+/device-private/
+/device-backups/
+/device-install/

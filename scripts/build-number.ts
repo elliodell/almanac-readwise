@@ -1,6 +1,7 @@
 // The number device.json sends as `build`, which the server compares: 0.4.0 → 400, 1.2.3 → 10203.
 export function buildNumber(version: string): number {
-  const [major, minor, patch] = version.split('.').map(Number)
+  // The downstream prerelease keeps the upstream Almanac service contract.
+  const [major, minor, patch] = version.split('-')[0].split('.').map(Number)
   if (![major, minor, patch].every(Number.isInteger) || minor > 99 || patch > 99) {
     throw new Error(`Version ${version} has no build number: minor and patch go up to 99`)
   }
