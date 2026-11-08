@@ -34,9 +34,17 @@ time zones, and a future loan-clock floor. The .6 build has no compiler
 warnings/errors: static RAM 111,804 / 327,680 bytes and flash
 5,483,250 / 6,553,600 bytes. Its application image is 5,488,512 bytes, SHA-256
 `9c3e818c975207df1f3d97e047a39d8dc9660ee1431552f3e4bc6fc09ddc0d0d`.
-End-to-end Books delivery, timing,
-stack/heap measurements and battery impact remain unverified. No synthetic
-sessions were sent to Readwise.
+X4 Pro .6 installation and direct Wi-Fi delivery are verified. A new session's
+book, UTC interval, active duration, progress and device fields matched the API
+record. Its saved receipt matched the exact request hash and API session ID;
+the acknowledged queue entry was removed. The user confirmed the duration was
+approximately correct. Reconnecting without reading retained the same API ID
+and exactly one matching session.
+An older retained session also uploaded during sleep after its recorded end
+time had passed, matching its original frozen request without rewriting history.
+
+The Books app display, broader offline/restart recovery, stack/heap measurements
+and battery impact remain unverified. No synthetic sessions were sent to Readwise.
 
 ## Device test
 
